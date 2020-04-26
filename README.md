@@ -1,5 +1,7 @@
 # cmpe273-assignment2
 Scantron evaluation using Flask API
+- An SQLite database has been created and pre-initialised with necessary table schemas.
+  The flask application will store and retrieve all data from this database.
 - Upload a file to add a new test using the /tests endpoint (POST)
   The file must contain a json in the foloowing format:
   {
