@@ -1,9 +1,9 @@
 # cmpe273-assignment2
 Scantron evaluation using Flask API
-- An SQLite database has been created and pre-initialised with necessary table schemas.
-  The flask application will store and retrieve all data from this database.
-- Upload a file to add a new test using the /tests endpoint (POST)
-  The file must contain a json in the foloowing format:
+- An SQLite database has been created and pre-initialised with necessary table schemas.<br>
+  The flask application will store and retrieve all data from this database.<br?>
+- Upload a file to add a new test using the /tests endpoint (POST)<br>
+  The file must contain a json in the foloowing format:<br>
   {
     "subject": "",
     "answer_keys": {
@@ -16,9 +16,9 @@ Scantron evaluation using Flask API
       "49":"D",
       "50": "E"
     }
-  }
-- Upload a file to evaluate your test using the tests/{test_id}/scantrons endpoint (POST)
-  The file must be in the following format:
+  }<br>
+- Upload a file to evaluate your test using the tests/{test_id}/scantrons endpoint (POST)<br>
+  The file must be in the following format:<br>
   {
     "name": "Foo Bar",
     "subject": "Math",
@@ -31,5 +31,5 @@ Scantron evaluation using Flask API
         .
       "49": "D",
       "50": "E"
-  }
-- To check all submissions for a test, execute a GET request against the /tests/{test_id} endpoint
+  }<br>
+- To check all submissions for a test, execute a GET request against the /tests/{test_id} endpoint<br>
